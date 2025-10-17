@@ -1,4 +1,4 @@
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`;
 
 const SYSTEM_PROMPT = `You are CineBuddy, an AI film enthusiast and movie curator.
 You recommend films based on mood, genre, decade, or actors.
