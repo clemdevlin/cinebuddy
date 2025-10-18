@@ -70,6 +70,8 @@ function App() {
       });
       return;
     }
+
+    setMessages((prev) => [...prev, userMessage]);
     
     setIsTyping(true);
 
