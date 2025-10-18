@@ -84,6 +84,8 @@ function App() {
       if (aiError) {
         throw new Error('Could not save the AI response to the database.');
       }
+
+      setMessages((prev) => [...prev, aiMessage]);
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred.';
       console.error(error);
